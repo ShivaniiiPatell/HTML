@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        <abbr> </abbr>
+        The <abbr> tag defines an abbreviation or an acronym, like "HTML", "CSS", "Mr.", "Dr.", "ASAP", "ATM".
+        Tip: Use the global title attribute to show the description for the abbreviation/acronym when you mouse over the element.
+    -->
+    
+    <p>abbr is a <abbr title="HyperText Markup Language">HTML</abbr> tag.</p>
+
+    <!--
+        <address></address>
+
+        The <address> tag defines the contact information for the author/owner of a document or an article.
+        The contact information can be an email address, URL, physical address, phone number, social media handle, etc.
+        The text in the <address> element usually renders in italic, and browsers will always add a line break before and after the <address> element.
+    -->
+    <address>
+        Written by <a href="mailto:webmaster@example.com">Jon Doe</a>.<br>
+        Visit us at:<br>
+        Example.com<br>
+        Box 564, Disneyland<br>
+        USA
+    </address><br>
+    <!--
+        <b></b>
+        HTML b Tag makes the text bold but it doesn't increase it's importance. For the important text you should use strong tag.
+    -->
+    <b>Hello iNeouron</b><br>
+    <!--
+        <bdi></bdi>
+        BDI stands for Bi-Directional Isolation.
+        The <bdi> tag isolates a part of text that might be formatted in a different direction from other text outside it.
+        This element is useful when embedding user-generated content with an unknown text direction.
+    -->
+    <ul>
+        <li><bdi >John</bdi> - 800</li>
+    </ul><br>
+    <!--
+        <bdo></bdo>
+        Using HTML bdo tag, you can override left to right direction of text to right to left and vice versa.
+        It is mostly used where the direction of text written inside bdo tag is known. For dynamic text HTML bdi tag is used.
+    -->
+    <bdo dir="rtl">This text will changes it's direction from right to left.</bdo>
+    <!--
+         <blockquote></<blockquote>
+
+        The <blockquote> tag specifies a section that is quoted from another source.
+    -->
+    <blockquote cite="http://www.worldwildlife.org/who/index.html">
+        For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.
+    </blockquote>
+    <!--
+        <cite></cite>
+        The <cite> tag defines the title of a creative work (e.g. a book, a poem, a song, a movie, a painting, a sculpture, etc.).
+    -->
+    <p><cite>The Scream</cite> by Edward Munch. Painted in 1893.</p><br>
+
+    <!-- <code></code> -->
+    
+    <p>The <code>push()</code> method adds one or more elements to the end of an array and returns the new length of the array.</p><br>
+
+    <!--
+        <del></del>
+        HTML del Tag is used to define the deleted text on a Web page.
+        Sometimes this tag is also used to put a line on the text, just to give it a style.
+    -->
+    <p>My favorite language is <del>PHP</del>.</p>
+
+    <!--
+        <dfn></dfn>
+        The <dfn> tag stands for the "definition element", and it specifies a term that is going to be defined within the content.
+        The nearest parent of the <dfn> tag must also contain the definition/explanation for the term.
+    -->
+    <p><dfn>HTML</dfn> is the standard markup language for creating web pages.</p><br>
+
+    <!--
+        <em></em>
+        The <em> tag is used to define emphasized text. The content inside is typically displayed in italic.
+    -->
+    <p>We <em>cannot</em> live like this.</p><br>
+    <!--
+        The <i> tag defines a part of text in an alternate voice or mood. The content inside is typically displayed in italic.
+        The <i> tag is often used to indicate a technical term, a phrase from another language, a thought, a ship name, etc.
+        Use the <i> element only when there is not a more appropriate semantic element, such as:
+            <em> (emphasized text)
+            <strong> (important text)   
+            <mark> (marked/highlighted text)
+            <cite> (the title of a work)
+            <dfn> (a definition term)
+    -->
+    <p><i>Lorem ipsum</i> is the most popular filler text in history.</p><br>
+    <!--
+        The <ins> tag defines a text that has been inserted into a document. Browsers will usually underline inserted text.
+    -->
+    <p>My favorite color is <del>blue</del> <ins>red</ins>!</p><br>
+    <!--
+        The <kbd> tag is used to define keyboard input. The content inside is displayed in the browser's default monospace font.
+        Tip: This tag is not deprecated. However, it is possible to achieve richer effect by using CSS (see example below).
+    -->
+    <p>Press <kbd>Ctrl</kbd> + <kbd>C</kbd> to copy text (Windows).</p><br>
+    <!--
+        The <mark> tag defines text that should be marked or highlighted.
+    -->
+    <p>Do not forget to buy <mark>milk</mark> today.</p>
+    <!--
+        The <meter> tag defines a scalar measurement within a known range, or a fractional value. This is also known as a gauge.
+    -->
+    <label for="disk_c">Disk usage C:</label>
+    <meter id="disk_c" value="2" min="0" max="10">2 out of 10</meter><br>
+    <!--
+        The <pre> tag defines preformatted text.
+        Text in a <pre> element is displayed in a fixed-width font, and the text preserves both spaces and line breaks.
+        The text will be displayed exactly as written in the HTML source code.
+    --> 
+    <pre>
+        Text in a pre element
+        is displayed in a fixed-width
+        font, and it preserves
+        both      spaces and
+        line breaks
+    </pre><br>
+    <!--
+        The <progress> tag represents the completion progress of a task.
+    -->
+    <label for="file">Downloading progress:</label>
+    <progress id="file" value="32" max="100"> 32% </progress><br>
+    <!--
+        The <q> tag defines a short quotation.
+    -->
+    <p>WWF's goal is to: 
+        <q>Build a future where people live in harmony with nature.</q>
+        We hope they succeed.</p><br>
+    <!--
+        The <s> tag specifies text that is no longer correct, accurate or relevant. The text will be displayed with a line through it.
+    -->
+    <p><s>Only 50 tickets left!</s></p>
+    <p>SOLD OUT!</p><br>
+    <!--
+        The <samp> tag is used to define sample output from a computer program.
+        The content inside is displayed in the browser's default monospace font.
+    -->
+    <p>Message from my computer:</p>
+    <p><samp>File not found.<br>Press F1 to continue</samp></p>
+    <!--
+        The <small> tag defines smaller text (like copyright and other side-comments).
+    -->
+    <p>This is some normal text.</p>
+    <p><small>This is some smaller text.</small></p><br>
+    <!--
+        The <strong> tag is used to define text with strong importance. The content inside is typically displayed in bold.
+    -->
+    <p><strong>This text is important!</strong></p><br>
+    <!--
+        The <sub> tag defines subscript text. Subscript text appears half a character below the normal line, and 
+        is sometimes rendered in a smaller font.
+        Subscript text can be used for chemical formulas, like H2O.
+    -->
+    <p>This text contains <sub>subscript</sub> text.</p><br>
+    <!--
+        The <sup> tag defines superscript text. Superscript text appears half a character above the normal line, 
+        and is sometimes rendered in a smaller font. Superscript text can be used for footnotes, like WWW[1].
+    -->
+    <p>This text contains <sup>superscript</sup> text.</p><br>
+    <!--
+        The <time> tag defines a specific time (or datetime).
+        The datetime attribute of this element is used translate the time into a machine-readable format so that browsers can offer to add date reminders through the user's calendar, and search engines can produce smarter search results.
+    -->
+    <p>Open from <time>10:00</time> to <time>21:00</time> every weekday.</p><br>
+    <!--
+        The <u> tag represents some text that is unarticulated and styled differently from normal text, such as misspelled words or proper names in Chinese text.
+        The content inside is typically displayed with an underline. You can change this with CSS (see example below). 
+    -->
+    <p>This is some <u>mispeled</u> text.</p><br>
+    <!--
+        The <var> tag is used to defines a variable in programming or in a mathematical expression. The content inside is typically displayed in italic.
+    -->
+    <p>The area of a triangle is: 1/2 x <var>b</var> x <var>h</var>, where <var>b</var> is the base, and <var>h</var> is the vertical height.</p><br>
+    <!--
+        The <wbr> (Word Break Opportunity) tag specifies where in a text it would be ok to add a line-break.
+    -->
+    <p>To learn AJAX, you must be familiar with the XML<wbr>Http<wbr>Request Object.</p>
+</body> 
+</html>
